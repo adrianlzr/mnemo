@@ -1,0 +1,4 @@
+[package]
+name = "compression"
+version.workspace = true
+edition.workspace = true

@@ -1,0 +1,16 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "${workspaceFolder}/rust/Cargo.toml"
+    ],
+    "python.defaultInterpreterPath": "${workspaceFolder}/python/.venv/bin/python",
+    "ruff.interpreter": [
+        "${workspaceFolder}/python/.venv/bin/python"
+    ],
+    "python-envs.pythonProjects": [
+        {
+            "path": "python",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ]
+}

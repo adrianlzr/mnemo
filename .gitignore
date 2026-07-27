@@ -1,0 +1,9 @@
+target
+.venv
+.git
+benches
+zig
+cpp
+!rust/bin/benches
+*.csv
+.vscode

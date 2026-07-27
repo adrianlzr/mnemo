@@ -1,0 +1,13 @@
+[package]
+version.workspace = true
+edition.workspace = true
+name = "store-capped"
+
+[dependencies]
+compression = { path = "../compression" }
+time = { path = "../time" }
+mmap = { path = "../mmap" }
+
+[features]
+default = []
+stats = []

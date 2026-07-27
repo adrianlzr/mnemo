@@ -1,0 +1,19 @@
+[package]
+name = "benches"
+edition.workspace = true
+version.workspace = true
+
+
+[dependencies]
+store-capped = { path = "../../crates/store-capped" }
+time = { path = "../../crates/time" }
+
+[[bin]]
+name = "store-capped"
+harness = false
+path = "src/store_capped.rs"
+
+[[bin]]
+name = "std-hashmap"
+harness = false
+path = "src/std_hashmap.rs"

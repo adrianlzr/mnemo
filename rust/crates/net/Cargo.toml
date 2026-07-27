@@ -1,0 +1,7 @@
+[package]
+version.workspace = true
+edition.workspace = true
+name = "net"
+
+[dependencies]
+socket2.workspace = true

@@ -1,0 +1,6 @@
+[workspace]
+resolver = "2"
+members = ["kv-xdp", "kv-xdp-common"]
+
+# kv-xdp-ebpf is NOT a workspace member: it's cross-compiled separately for
+# bpfel-unknown-none with the nightly toolchain by kv-xdp/build.rs.

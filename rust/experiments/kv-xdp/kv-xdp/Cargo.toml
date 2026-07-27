@@ -1,0 +1,17 @@
+[package]
+name = "kv-xdp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aya = "0.13"
+aya-log = "0.2"
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+env_logger = "0.11"
+log = "0.4"
+libc = "0.2"
+kv-xdp-common = { path = "../kv-xdp-common", features = ["user"] }
+
+[build-dependencies]
+anyhow = "1"

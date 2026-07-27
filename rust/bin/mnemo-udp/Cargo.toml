@@ -1,0 +1,10 @@
+[package]
+name = "mnemo-udp"
+edition.workspace = true
+version.workspace = true
+
+
+[dependencies]
+store = {path = "../../crates/store"}
+net = {path = "../../crates/net"}
+tokio.workspace = true
