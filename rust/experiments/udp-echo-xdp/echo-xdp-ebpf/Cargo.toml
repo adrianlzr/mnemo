@@ -1,0 +1,20 @@
+[package]
+name = "echo-xdp-ebpf"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aya-ebpf = "0.1"
+aya-log-ebpf = "0.1"
+network-types = "0.0.7"
+
+[[bin]]
+name = "echo-xdp"
+path = "src/main.rs"
+
+[profile.release]
+lto = true
+panic = "abort"
+codegen-units = 1
+
+[workspace]

@@ -1,0 +1,16 @@
+[package]
+name = "echo-xdp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aya = "0.13"
+aya-log = "0.2"
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+env_logger = "0.11"
+log = "0.4"
+xsk-rs = "0.8"
+
+[build-dependencies]
+anyhow = "1"

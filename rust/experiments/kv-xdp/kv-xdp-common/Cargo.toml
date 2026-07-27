@@ -1,0 +1,13 @@
+[package]
+name = "kv-xdp-common"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = []
+# Enabled only by the userspace crate, so the eBPF crate never pulls in `aya`
+# (which needs std and isn't meant to build for bpfel-unknown-none).
+user = ["aya"]
+
+[dependencies]
+aya = { version = "0.13", optional = true }

@@ -1,0 +1,9 @@
+[package]
+version.workspace = true
+edition.workspace = true
+name = "store"
+
+[dependencies]
+tokio.workspace = true
+ahash.workspace = true
+dashmap.workspace = true

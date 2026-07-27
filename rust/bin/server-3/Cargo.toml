@@ -1,0 +1,9 @@
+[package]
+name = "server-3"
+edition.workspace = true
+version.workspace = true
+
+[dependencies]
+udp-server = { path = "../../crates/udp-server/" }
+store-capped = { path = "../../crates/store-capped" }
+time = { path = "../../crates/time" }

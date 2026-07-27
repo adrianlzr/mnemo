@@ -1,0 +1,15 @@
+[package]
+name = "mnemo-udp-capped"
+edition.workspace = true
+version.workspace = true
+
+
+[dependencies]
+store-capped = { path = "../../crates/store-capped" }
+time = { path = "../../crates/time" }
+net = { path = "../../crates/net" }
+tokio.workspace = true
+
+[features]
+default = []
+stats = ["store-capped/stats"]

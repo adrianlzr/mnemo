@@ -1,0 +1,6 @@
+[workspace]
+resolver = "2"
+members = ["echo-xdp"]
+
+# echo-xdp-ebpf is NOT a workspace member: it's compiled separately for the
+# bpfel-unknown-none target with a different (nightly) toolchain. See README.md.
